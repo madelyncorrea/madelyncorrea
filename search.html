@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda - Tienda de Lentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tienda de Lentes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="lentes-de-vista.html">Lentes de Vista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lentes-de-sol.html">Lentes de Sol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container search-container">
+        <h1 class="text-center">Buscar Productos</h1>
+        <form class="d-flex" role="search" onsubmit="return filterProducts()">
+            <input id="search-input" class="form-control search-input me-2" type="search" placeholder="Buscar lentes..." aria-label="Search">
+            <button class="btn btn-outline-success search-button" type="submit">Buscar</button>
+        </form>
+
+        <div class="search-results mt-4">
+            <h2>Resultados de Búsqueda</h2>
+            <div class="row" id="product-results">
+                <!-- Aquí se mostrarán los resultados filtrados -->
+            </div>
+        </div>
+
+        <div class="image-container mt-4" id="all-products">
+            <!-- Aquí se incluyen todos los productos -->
+            <div class="image-item" data-name="Aviador">
+                <h2>Gafas de sol "Aviador":</h2>
+                <p>$15 USD</p>
+                <img src="imagenes/ebe7ea85-f7f1-4870-886d-d4d389b5baea.jpg" alt="gafas Aviador">
+            </div>
+            <div class="image-item" data-name="Eclipse">
+                <h2>Gafas de Sol "Eclipse":</h2>
+                <p>$20 USD</p>
+                <img src="imagenes/a17fe3e5-20b4-4db1-ba11-4dfc3009df51.jpg" alt="gafas Eclipse">
+            </div>
+            <div class="image-item" data-name="Nebula">
+                <h2>Gafas de Sol "Nebula":</h2>
+                <p>$18 USD</p>
+                <img src="imagenes/676c7917-e270-4a9c-89be-076963099644.jpg" alt="gafas Nebula">
+            </div>
+            <div class="image-item" data-name="Phoenix">
+                <h2>Gafas de Sol "Phoenix":</h2>
+                <p>$18 USD</p>
+                <img src="imagenes/ae45f5ec-7dfa-43dc-aa63-ddf17ded07ae.jpg" alt="gafas Phoenix">
+            </div>
+            <div class="image-item" data-name="Aurora">
+                <h2>Gafas de Sol "Aurora":</h2>
+                <p>$17 USD</p>
+                <img src="imagenes/9de0d14b-5e6e-4bcb-8221-fe171e1e0222.jpg" alt="gafas Aurora">
+            </div>
+            <!-- Añadir más productos aquí -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterProducts() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const allProducts = document.querySelectorAll('#all-products .image-item');
+            const resultsContainer = document.getElementById('product-results');
+
+            resultsContainer.innerHTML = '';
+
+            allProducts.forEach(product => {
+                const productName = product.getAttribute('data-name').toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    const clone = product.cloneNode(true);
+                    resultsContainer.appendChild(clone);
+                }
+            });
+
+            return false; // Prevent the form from submitting and refreshing the page
+        }
+    </script>
+</body>
+</html>

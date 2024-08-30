@@ -1,0 +1,122 @@
+/*
+Theme Name: Brook
+Theme URI: http://themeforest.net/item/brook-light-responsive-wordpress-blog-theme/11171592
+Version: 1.5.0
+Description: Light & Responsive WordPress Blog Theme
+Author: korra.io
+Author URI: http://korra.io/
+Tags: white, light, left-sidebar, right-sidebar, responsive-layout, custom-colors, theme-options, featured-images, post-formats, rtl-language-support, translation-ready, threaded-comments
+License: GNU General Public License v2 or later
+License URI: licensing/GPL.txt
+Text Domain: brook
+*/
+
+
+
+/*------------------------------------------------------------
+ * LESS source files:
+ * stylesheet/less/main.less
+ *
+ * Compiled file:
+ * stylesheet/compiled.css
+ *
+ * Customizations:
+ * stylesheet/customized_style.php
+ *------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------
+ * Changelog
+ *------------------------------------------------------------
+ *
+ * Version 1.5.0 - October 9th, 2015
+ *------------------------------------------------------------
+ * New Header Layout: Classic - horizontal navigation and large logo
+ * Fixed bug on Safari with blinking and reloading page on initial load
+ *
+ * Version 1.4.3 - September 26th, 2015
+ *------------------------------------------------------------
+ * Theme Option: Post Comments with Ajax ON/OFF
+ * Improved support for manually uploaded author avatars
+ * Added styles for .screen-reader-text WP class
+ * WP body classes are now also in content to better suit ajax loading
+ *
+ * Version 1.4.2 - September 14th, 2015
+ *------------------------------------------------------------
+ * Featured Slider: Improved in case of only one featured item
+ * Bugfix: Customizing font-sizes doesn't work
+ *
+ * Version 1.4.1 - September 11th, 2015
+ *------------------------------------------------------------
+ * Hotfix: WP-Less v.1.7.6 crash-bug resolved
+ * Gmaps: JS link now supports 'https'
+ *
+ * Version 1.4.0 - July 30th, 2015
+ *------------------------------------------------------------
+ * Featured Slider: Defaults to latest posts until tag selected
+ * Featured Slider: Can be added to Static Page
+ * Featured Slider: Static Page can be added as a featured item
+ * Fixed bug with .png and .gif images used for Cover
+ * Style updates, bug fixes and plugin compatibilites improved
+ *
+ * Version 1.3.4 - July 21st, 2015
+ *------------------------------------------------------------
+ * Blog Widget: Classic List - mobile bug fixed
+ * Minor style updates and bug fixes
+ *
+ * Version 1.3.3 - July 18th, 2015
+ *------------------------------------------------------------
+ * Fixed bug with image sizes when using Photon CDN
+ * Minor style updates and bug fixes
+ *
+ * Version 1.3.2 - July 15th, 2015
+ *------------------------------------------------------------
+ * Mobile style and behavior improvements
+ * Right menu minor bug fixes
+ * Homepage Cover moved above the Featured posts
+ *
+ * Version 1.3.1 - July 10th, 2015
+ *------------------------------------------------------------
+ * Featured image as cover gets auto dark-mode when luminance is low
+ * Infobar now skips sticky posts
+ * Various security, validation and under-the-hood improvements
+ * Minor style updates
+ *
+ * Version 1.3.0 - July 5th, 2015
+ *------------------------------------------------------------
+ * New Feature: Parallaxed Cover
+ * Theme Option: Link Color
+ * Major overall visual polish and animation improvement
+ * Various design and under-the-hood improvements
+ *
+ * Version 1.2.1 - June 3nd, 2015
+ *------------------------------------------------------------
+ * Minor style and typography updates
+ *
+ * Version 1.2.0 - June 2nd, 2015
+ *------------------------------------------------------------
+ * New Layout: Gallery Grid
+ * New Layout: Archive List
+ * Instagram Footer
+ * Added: Back to top
+ * Added: Unfold Footer
+ * Theme Option: Alternative Small Logo
+ * Redesigned header and menu
+ * Various design and under-the-hood improvements
+ *
+ * Version 1.1.0 - April 26th, 2015
+ *------------------------------------------------------------
+ * Infobar feature added
+ * Smooth scroll added
+ * Page Blog now supports custom title
+ * Sticky post and widget styles improved
+ * Under-the-hood and security updates
+ *
+ * Version 1.0.0 - April 18th, 2015
+ *------------------------------------------------------------
+ * Initial Release
+ *
+ *------------------------------------------------------------*/
